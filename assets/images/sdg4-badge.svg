@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="20" fill="#C2185B"/>
+  <text x="18" y="44" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#FFFFFF">4</text>
+  <text x="44" y="32" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">QUALITY</text>
+  <text x="44" y="48" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">EDUCATION</text>
+  
+  <!-- Open Book and Pen Graphic -->
+  <g transform="translate(30, 70)">
+    <path d="M70 20 L70 90 C50 82 25 80 5 95 L5 25 C25 10 50 12 70 20 Z" fill="#FFFFFF"/>
+    <path d="M70 20 L70 90 C90 82 115 80 135 95 L135 25 C115 10 90 12 70 20 Z" fill="#FFFFFF"/>
+    <path d="M70 15 L70 88" stroke="#C2185B" stroke-width="3"/>
+    <!-- Pencil / Quill -->
+    <path d="M125 5 L135 15 L80 70 L70 70 L70 60 Z" fill="#FCE7F3" stroke="#FFFFFF" stroke-width="1.5"/>
+  </g>
+</svg>

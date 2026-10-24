@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320">
+  <defs>
+    <linearGradient id="secBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4C0519"/>
+      <stop offset="100%" stop-color="#1C1917"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="320" rx="16" fill="url(#secBg)"/>
+
+  <!-- Cyber Defense Matrix & Shield -->
+  <g transform="translate(160, 45)">
+    <!-- Circuit lines radiating out -->
+    <path d="M90 10 L90 50 M90 150 L90 190 M10 100 L50 100 M130 100 L170 100" stroke="#FB7185" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- Central Defensive Shield -->
+    <path d="M90 25 L150 50 V115 C150 155 90 180 90 180 C90 180 30 155 30 115 V50 Z" fill="url(#shieldGrad)" stroke="#FDA4AF" stroke-width="3"/>
+    
+    <!-- Keyhole / Padlock inside shield -->
+    <rect x="75" y="90" width="30" height="28" rx="6" fill="#FFFFFF"/>
+    <path d="M82 90 V78 C82 72 98 72 98 78 V90" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="90" cy="102" r="3.5" fill="#BE123C"/>
+    <line x1="90" y1="104" x2="90" y2="111" stroke="#BE123C" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- CIA Triad Indicators -->
+  <g transform="translate(50, 90)">
+    <rect width="85" height="28" rx="6" fill="#1C1917" stroke="#F43F5E" stroke-width="1"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" font-weight="bold" fill="#FDE047">CONFIDENTIAL</text>
+  </g>
+  <g transform="translate(360, 90)">
+    <rect width="85" height="28" rx="6" fill="#1C1917" stroke="#F43F5E" stroke-width="1"/>
+    <text x="14" y="18" font-family="sans-serif" font-size="10" font-weight="bold" fill="#4ADE80">INTEGRITY</text>
+  </g>
+  <g transform="translate(205, 235)">
+    <rect width="90" height="24" rx="6" fill="#1C1917" stroke="#F43F5E" stroke-width="1"/>
+    <text x="10" y="16" font-family="sans-serif" font-size="10" font-weight="bold" fill="#38BDF8">AVAILABLE</text>
+  </g>
+
+  <!-- Title Pill -->
+  <g transform="translate(30, 260)">
+    <rect width="180" height="34" rx="8" fill="#290710" stroke="#F43F5E" stroke-width="1.5"/>
+    <text x="16" y="22" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#FECDD3">CYBERSECURITY</text>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320">
+  <defs>
+    <linearGradient id="webBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134E4A"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+    <linearGradient id="browserBar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="320" rx="16" fill="url(#webBg)"/>
+
+  <!-- Browser window and API flow -->
+  <g transform="translate(60, 40)">
+    <rect width="380" height="205" rx="12" fill="#0F172A" stroke="#2DD4BF" stroke-width="1.5" opacity="0.95"/>
+    <!-- Browser Top Bar -->
+    <path d="M0 12 Q0 0 12 0 L368 0 Q380 0 380 12 L380 30 L0 30 Z" fill="#1E293B"/>
+    <circle cx="16" cy="15" r="4" fill="#EF4444"/>
+    <circle cx="28" cy="15" r="4" fill="#F59E0B"/>
+    <circle cx="40" cy="15" r="4" fill="#10B981"/>
+    <!-- URL search pill -->
+    <rect x="65" y="7" width="220" height="16" rx="8" fill="#0F172A"/>
+    <text x="75" y="19" font-family="monospace" font-size="9" fill="#2DD4BF">https://api.learnsphere.org/v1/posts</text>
+
+    <!-- Client & Server Flow visualization -->
+    <g transform="translate(20, 50)">
+      <!-- Client Box -->
+      <rect x="10" y="20" width="100" height="85" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="32" y="45" font-family="sans-serif" font-weight="bold" font-size="11" fill="#FFFFFF">Client (UI)</text>
+      <rect x="25" y="60" width="70" height="8" rx="4" fill="#2DD4BF"/>
+      <rect x="25" y="75" width="50" height="6" rx="3" fill="#64748B"/>
+
+      <!-- Arrows in between (HTTP GET / JSON Response) -->
+      <path d="M125 45 L205 45" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+      <polygon points="205,45 198,40 198,50" fill="#38BDF8"/>
+      <text x="135" y="38" font-family="monospace" font-size="9" fill="#38BDF8">GET /api</text>
+
+      <path d="M205 75 L125 75" stroke="#34D399" stroke-width="2" stroke-linecap="round"/>
+      <polygon points="125,75 132,70 132,80" fill="#34D399"/>
+      <text x="135" y="90" font-family="monospace" font-size="9" fill="#34D399">JSON 200 OK</text>
+
+      <!-- Server Database Box -->
+      <rect x="220" y="20" width="110" height="85" rx="8" fill="#1E293B" stroke="#334155"/>
+      <text x="245" y="45" font-family="sans-serif" font-weight="bold" font-size="11" fill="#FFFFFF">REST Server</text>
+      <circle cx="240" cy="72" r="5" fill="#34D399"/>
+      <text x="252" y="76" font-family="monospace" font-size="9" fill="#E2E8F0">Active</text>
+    </g>
+  </g>
+
+  <!-- Title Pill -->
+  <g transform="translate(30, 255)">
+    <rect width="180" height="34" rx="8" fill="#042F2E" stroke="#14B8A6" stroke-width="1.5"/>
+    <text x="16" y="22" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#5EEAD4">WEB DEV &amp; APIS</text>
+  </g>
+</svg>
